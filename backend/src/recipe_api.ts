@@ -1,6 +1,6 @@
 const apiKey = process.env.API_KEY;
 
-export const recipeSearch = async (searchTerm: string, page: number) => {
+export const searchRecipes = async (searchTerm: string, page: number) => {
     if(!apiKey) {
         throw new Error('The API key could not be found');
     }
@@ -16,9 +16,9 @@ export const recipeSearch = async (searchTerm: string, page: number) => {
     url.search = new URLSearchParams(queryParams).toString();
     
     try {
-        const searchRes = await fetch(url);
-        const resJson = await searchRes.json();
-        return resJson;
+        const searchResponce = await fetch(url);
+        const resultsJson = await searchResponce.json();
+        return resultsJson;
     } catch (error) {
         console.log(error);
     }
