@@ -12,25 +12,23 @@ function App() {
     try {
       const recipes = await api.searchRecipes(searchTerm, 1);
       setRecipes(recipes.results);
-    } catch(e) {
-      console.log(e);
+    } catch (error) {
+      console.log('Error fetching recipes:', error);
     }
-  }
+  };
 
   return (
-    <>
-      <div>
-        <form onSubmit={ (event) => handleSearchSubmit(event)}>
-          <button type="submit">Submit</button>
-        </form>
-        {recipes.map((recipe) => (
-          <div>
-            recipe image: {recipe.image}
-            recipe title: {recipe.title}
-          </div>
-        ))}
-      </div>
-    </>
+    <div>
+      <form onSubmit={(event)=> handleSearchSubmit(event)}>
+        <button type="submit">Submit</button>
+      </form>
+      {recipes.map((recipe) => (
+        <div>
+          recipe image: {recipe.image}
+          recipe title: {recipe.title}
+        </div>
+      ))}
+    </div>
   );
 };
 

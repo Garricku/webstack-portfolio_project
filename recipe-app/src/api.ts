@@ -1,5 +1,5 @@
 export const searchRecipes = async (searchTerm: string, page: number) => {
-    const buildUrl = new URL("https://localhost:5000/api/recipes/search");
+    const buildUrl = new URL("http://localhost:5000/api/recipes/search");
     buildUrl.searchParams.append('searchTerm', searchTerm);
     buildUrl.searchParams.append('page', String(page));
 
