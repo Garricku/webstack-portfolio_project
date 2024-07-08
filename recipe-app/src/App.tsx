@@ -26,15 +26,17 @@ function App() {
         <img src={foodie} alt="Foodie" />
         <h1 className="app-title">Foodie</h1>
       </div>
-      <form onSubmit={(event)=> handleSearchSubmit(event)}>
-      <input
-        type="text"
-        required
-        placeholder="Search for your favorite foods e.g. Pizza"
-        value={searchTerm}
-        onChange={(event)=> setSearchTerm(event.target.value)}/>
-        <button type="submit">Submit</button>
-      </form>
+      <div className="navbar">
+        <form onSubmit={(event)=> handleSearchSubmit(event)}>
+        <input
+          type="text"
+          required
+          placeholder="Search for your favorite foods e.g. Pizza"
+          value={searchTerm}
+          onChange={(event)=> setSearchTerm(event.target.value)}/>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
       {recipes.map((recipe) => (
         <RecipeCard recipe={recipe}/>
       ))}
