@@ -4,7 +4,7 @@ import * as api from "./api";
 import { Recipe } from "./types";
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState("burgers");
+  const [searchTerm, setSearchTerm] = useState<string>("");
   const [recipes, setRecipes] = useState<Recipe[]>([]);
 
   const handleSearchSubmit = async (event: FormEvent) => {
@@ -20,6 +20,12 @@ function App() {
   return (
     <div>
       <form onSubmit={(event)=> handleSearchSubmit(event)}>
+      <input
+        type="text"
+        required
+        placeholder="Search for your favorite foods e.g. Pizza"
+        value={searchTerm}
+        onChange={(event)=> setSearchTerm(event.target.value)}/>
         <button type="submit">Submit</button>
       </form>
       {recipes.map((recipe) => (
