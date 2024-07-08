@@ -2,6 +2,9 @@ import "./App.css";
 import { FormEvent, useState } from "react";
 import * as api from "./api";
 import { Recipe } from "./types";
+import RecipeCard from "./components/RecipeCard";
+import foodie from "./assets/foodie.jpg"
+
 
 function App() {
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -19,6 +22,10 @@ function App() {
 
   return (
     <div>
+      <div className="header-image">
+        <img src={foodie} alt="Foodie" />
+        <h1 className="app-title">Foodie</h1>
+      </div>
       <form onSubmit={(event)=> handleSearchSubmit(event)}>
       <input
         type="text"
@@ -29,10 +36,7 @@ function App() {
         <button type="submit">Submit</button>
       </form>
       {recipes.map((recipe) => (
-        <div>
-          recipe image: {recipe.image}
-          recipe title: {recipe.title}
-        </div>
+        <RecipeCard recipe={recipe}/>
       ))}
     </div>
   );
