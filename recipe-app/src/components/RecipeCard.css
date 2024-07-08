@@ -1,0 +1,31 @@
+.recipe-card {
+    width: 70%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    gap: 20px;
+    border: solid 2px #777;
+    padding: 30px;
+    margin: 20px;
+    float: right;
+    border-radius: 45px;
+    align-items: center;
+}
+.recipe-image img {
+    border-radius: 45px;
+    width: 100%;
+    height: 280px;
+}
+
+.recipe-title {
+    padding: 10px;
+    grid-column: 2;
+    text-align: center;
+}
+
+.recipe-info {
+    border: rgb(222, 205, 51) solid 2px;
+    border-radius: 45px;
+    padding: 10px;
+    text-align: center;
+}
