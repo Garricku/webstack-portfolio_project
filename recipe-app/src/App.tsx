@@ -3,7 +3,7 @@ import { FormEvent, useState } from "react";
 import * as api from "./api";
 import { Recipe } from "./types";
 import RecipeCard from "./components/RecipeCard";
-import foodie from "./assets/foodie.jpg"
+import foodie from "./assets/foodie.jpg";
 
 
 function App() {
@@ -21,22 +21,18 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="body">
       <div className="header-image">
         <img src={foodie} alt="Foodie" />
         <h1 className="app-title">Foodie</h1>
       </div>
       <div className="navbar">
-        <nav className="nav-bar">
-          <ul>
-            <li>
-              <h4>Home</h4>
-            </li>
-            <li>
-              <h4>Favorites</h4>
-            </li>
-          </ul>
-        </nav>
+        <div>
+            <h4 className="nav-item">Home</h4>
+        </div>
+        <div>
+          <h4 className="nav-item">Favorites</h4>
+        </div>
         <form onSubmit={(event)=> handleSearchSubmit(event)}>
         <input
           type="text"

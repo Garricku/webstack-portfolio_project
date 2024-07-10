@@ -28,12 +28,16 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: solid #cf9708bf .2rem;
+  border-top: solid #cf9708bf .2rem;
+  border-bottom: solid #cf9708bf .2rem;
+  padding: 5px;
   background-color: rgba(42, 40, 40, 0.735);
   z-index: 100;
   opacity: .9;
 }
 
-.nav-bar {
-  display: flex;
+.body {
+  background-image: url('./assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
