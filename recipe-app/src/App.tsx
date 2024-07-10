@@ -27,6 +27,16 @@ function App() {
         <h1 className="app-title">Foodie</h1>
       </div>
       <div className="navbar">
+        <nav className="nav-bar">
+          <ul>
+            <li>
+              <h4>Home</h4>
+            </li>
+            <li>
+              <h4>Favorites</h4>
+            </li>
+          </ul>
+        </nav>
         <form onSubmit={(event)=> handleSearchSubmit(event)}>
         <input
           type="text"

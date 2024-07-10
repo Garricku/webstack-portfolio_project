@@ -1,18 +1,39 @@
 #root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: auto;
+  background-color: rgba(45, 44, 58, 0.868);
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .header-image img {
   display: block;
   margin: auto;
+  padding: 20px;
   width: 450px;
   height: 300px;
   border-radius: 300px;
 }
 
 .app-title {
+  padding: 10px;
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.navbar {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid #cf9708bf .2rem;
+  background-color: rgba(42, 40, 40, 0.735);
+  z-index: 100;
+  opacity: .9;
+}
+
+.nav-bar {
+  display: flex;
+}
