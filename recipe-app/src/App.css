@@ -1,6 +1,6 @@
 #root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgba(45, 44, 58, 0.868);
+  color: rgb(214, 224, 224);
 }
 
 * {
@@ -28,8 +28,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: solid #cf9708bf .2rem;
-  border-bottom: solid #cf9708bf .2rem;
+  border-top: solid #cf0830bf .2rem;
+  border-bottom: solid #cf0830bf .2rem;
   padding: 5px;
   background-color: rgba(42, 40, 40, 0.735);
   z-index: 100;
@@ -40,4 +40,13 @@
   background-image: url('./assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer {
+  float: inline-end;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  border-top: solid #cf0830bf .2rem;
+  background-color: rgba(26, 25, 25, 0.945);
 }

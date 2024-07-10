@@ -46,6 +46,9 @@ function App() {
       {recipes.map((recipe) => (
         <RecipeCard recipe={recipe}/>
       ))}
+      <footer className="footer">
+        <p>Copyright © 2024 Foodie - All Rights Reserved</p>
+      </footer>
     </div>
   );
 };

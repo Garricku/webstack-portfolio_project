@@ -11,6 +11,7 @@
     float: right;
     border-radius: 45px;
     align-items: center;
+    background-color: rgb(32, 28, 36);
 }
 .recipe-image img {
     border-radius: 45px;
