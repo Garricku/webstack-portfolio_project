@@ -47,6 +47,28 @@
   text-align: center;
   padding: 2rem;
   width: 100%;
+  height: 100%;
   border-top: solid #cf0830bf .2rem;
   background-color: rgba(26, 25, 25, 0.945);
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: rgb(210, 30, 72);
+}
+
+.nav-item:active {
+  color: aquamarine;
+}
+
+.search img {
+  width: 30px;
+  height: 20px;
+}
+
+.sub-heading {
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  color: #f9c60b;
 }

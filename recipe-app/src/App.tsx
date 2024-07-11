@@ -3,7 +3,8 @@ import { FormEvent, useState } from "react";
 import * as api from "./api";
 import { Recipe } from "./types";
 import RecipeCard from "./components/RecipeCard";
-import foodie from "./assets/foodie.jpg";
+import foodie from "./assets/fooooodie.png";
+import searchglass from "./assets/search.svg";
 
 
 function App() {
@@ -21,27 +22,32 @@ function App() {
   };
 
   return (
-    <div className="body">
-      <div className="header-image">
-        <img src={foodie} alt="Foodie" />
-        <h1 className="app-title">Foodie</h1>
+    <div>
+      <div className="body">
+        <div className="header-image">
+          <img src={foodie} alt="Foodie" />
+        </div>
+        <div className="navbar">
+          <div>
+              <h4 className="nav-item">Home</h4>
+          </div>
+          <div>
+            <h4 className="nav-item">Favorites</h4>
+          </div>
+          <form onSubmit={(event)=> handleSearchSubmit(event)}>
+          <input
+            type="text"
+            required
+            placeholder="Search for food e.g. Pizza"
+            value={searchTerm}
+            onChange={(event)=> setSearchTerm(event.target.value)}/>
+            <button className="search" type="submit"><img src={searchglass} alt="Search"/></button>
+          </form>
+        </div>
       </div>
-      <div className="navbar">
-        <div>
-            <h4 className="nav-item">Home</h4>
-        </div>
-        <div>
-          <h4 className="nav-item">Favorites</h4>
-        </div>
-        <form onSubmit={(event)=> handleSearchSubmit(event)}>
-        <input
-          type="text"
-          required
-          placeholder="Search for your favorite foods e.g. Pizza"
-          value={searchTerm}
-          onChange={(event)=> setSearchTerm(event.target.value)}/>
-          <button type="submit">Submit</button>
-        </form>
+      <div className="sub-heading">
+        <h1 className="app-title">Yumm!</h1>
+        <h1>Find Your Next Favourite Meal!</h1>
       </div>
       {recipes.map((recipe) => (
         <RecipeCard recipe={recipe}/>

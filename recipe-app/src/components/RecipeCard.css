@@ -1,34 +1,34 @@
 .recipe-card {
-    width: 70%;
-    min-width: fit-content;
-    min-height: fit-content;
+    height: 90%;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr, 1fr;
-    gap: 20px;
     border: solid 2px #777;
     padding: 30px;
     margin: 20px;
     float: right;
     border-radius: 45px;
     align-items: center;
-    background-color: rgb(32, 28, 36);
+    background-color: rgba(26, 25, 25, 0.945);
 }
 .recipe-image img {
     border-radius: 45px;
-    max-width: 500px;
-    max-height: 300px;
+    width: 500px;
+    height: 300px;
 }
 
 .recipe-title {
     padding: 10px;
     grid-column: 2;
+    padding: 15px;
     text-align: center;
+    max-width: 400px;
 }
 
 .recipe-info {
-    border: rgb(222, 205, 51) solid 2px;
     border-radius: 45px;
     padding: 10px;
     text-align: center;
     min-width: 100px;
+    max-width: 400px;
 }
