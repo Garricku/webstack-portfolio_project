@@ -16,6 +16,12 @@ app.get("/api/recipes/search", async (req, res) => {
     return res.json(result);
 });
 
+app.get("/api/recipes/:recipeId/summary", async(req, res) => {
+    const recipeId = req.params.recipeId;
+    const result = await RecipeApi.getRecipeSummary(recipeId);
+    return res.json(result);
+});
+
 app.listen(5000, () => {
     console.log('The app is cooking!');
 });
