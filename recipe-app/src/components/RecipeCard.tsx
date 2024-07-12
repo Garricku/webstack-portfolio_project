@@ -14,8 +14,8 @@ const RecipeCard = ({recipe}: Props) => {
             </div>
             <div className="recipe-title">
                 <h3>{recipe.title}</h3>
-                <div className="recipe-info">
-                    <p>Something about this recipe.</p>
+                <div className="recipe-summary">
+                    <button>More About this recipe</button>
                 </div>
             </div>
         </div>

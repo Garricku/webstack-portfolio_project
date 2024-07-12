@@ -1,11 +1,14 @@
 #root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(214, 224, 224);
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+.header {
+  width: 100%;
 }
 
 .header-image img {
@@ -34,6 +37,7 @@
   background-color: rgba(42, 40, 40, 0.735);
   z-index: 100;
   opacity: .9;
+  color: beige;
 }
 
 .body {
@@ -71,4 +75,20 @@
   padding: 20px;
   margin: auto;
   color: #f9c60b;
+}
+
+.view-more-button {
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border:  solid rgb(235, 212, 7) 2px;
+  border-radius: 45px;
+}
+
+.view-more-button:hover {
+  cursor: pointer;
 }

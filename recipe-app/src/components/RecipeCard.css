@@ -3,18 +3,18 @@
     width: 90%;
     display: grid;
     grid-template-columns: 1fr, 1fr;
-    border: solid 2px #777;
+    border: solid 2px salmon;
     padding: 30px;
     margin: 20px;
     float: right;
     border-radius: 45px;
     align-items: center;
-    background-color: rgba(26, 25, 25, 0.945);
 }
 .recipe-image img {
     border-radius: 45px;
-    width: 500px;
+    width: 400px;
     height: 300px;
+    max-width: 100%;
 }
 
 .recipe-title {
@@ -22,13 +22,5 @@
     grid-column: 2;
     padding: 15px;
     text-align: center;
-    max-width: 400px;
-}
-
-.recipe-info {
-    border-radius: 45px;
-    padding: 10px;
-    text-align: center;
-    min-width: 100px;
     max-width: 400px;
 }
