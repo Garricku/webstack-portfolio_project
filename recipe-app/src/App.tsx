@@ -42,7 +42,7 @@ function App() {
         </div>
         <div className="navbar">
           <div>
-            <h4 className="nav-item" onClick={(event) => { setSearchTerm('')}}>New Search</h4>
+            <h4 className="nav-item" onClick={() => { setSearchTerm('')}}>New Search</h4>
           </div>
           <form onSubmit={(event)=> handleSearchSubmit(event)}>
           <input
