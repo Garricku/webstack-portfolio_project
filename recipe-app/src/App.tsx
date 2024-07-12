@@ -38,6 +38,7 @@ function App() {
   const handleRecipeClick = async (recipeId: number) => {
     try {
       const recipe = await api.getRecipeInformation(recipeId);
+      console.log('Fetched recipe:', recipe);
       setSelectedRecipe(recipe);
     } catch (error) {
       console.log('Error fetching recipe details:', error);
