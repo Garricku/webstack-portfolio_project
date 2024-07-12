@@ -1,3 +1,94 @@
 #root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+}
+
+.header-image img {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  width: 450px;
+  height: 300px;
+  border-radius: 300px;
+}
+
+.app-title {
+  padding: 10px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: solid #cf0830bf .2rem;
+  border-bottom: solid #cf0830bf .2rem;
+  padding: 5px;
+  background-color: rgba(42, 40, 40, 0.735);
+  z-index: 100;
+  opacity: .9;
+  color: beige;
+}
+
+.body {
+  background-image: url('./assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  float: inline-end;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  border-top: solid #cf0830bf .2rem;
+  background-color: rgba(26, 25, 25, 0.945);
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: rgb(210, 30, 72);
+}
+
+.nav-item:active {
+  color: aquamarine;
+}
+
+.search img {
+  width: 30px;
+  height: 20px;
+}
+
+.sub-heading {
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  color: #f9c60b;
+}
+
+.view-more-button {
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border:  solid rgb(235, 212, 7) 2px;
+  border-radius: 45px;
+}
+
+.view-more-button:hover {
+  cursor: pointer;
+}
