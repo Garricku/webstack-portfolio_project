@@ -22,6 +22,12 @@ app.get("/api/recipes/:recipeId/summary", async(req, res) => {
     return res.json(result);
 });
 
+app.get("/api/recipes/:recipeId/information", async (req, res) => {
+    const recipeId = req.params.recipeId;
+    const result = await RecipeApi.getRecipeInformation(recipeId);
+    return res.json(result);
+});
+
 app.listen(5000, () => {
     console.log('The app is cooking!');
 });
