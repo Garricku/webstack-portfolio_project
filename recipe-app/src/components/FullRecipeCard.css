@@ -1,0 +1,34 @@
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .recipe-title {
+    padding: 16px;
+    background-color: #f8f8f8;
+  }
+  
+  .recipe-details {
+    padding: 16px;
+  }
+  
+  .recipe-details h4 {
+    margin-top: 0;
+  }
+  
+  .recipe-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recipe-details ul li {
+    margin-bottom: 8px;
+  }
