@@ -1,14 +1,14 @@
 .full-recipe-card {
-    border: 2px solid #b73c65c5;
+    border: solid 2px rgb(193, 184, 7);
     border-radius: 8px;
     overflow: hidden;
-    margin: 16px;
-    box-shadow: 0 4px 8px rgba(227, 6, 69, 0.635);
+    margin: 25px;
+    box-shadow: 0 4px 8px rgba(26, 3, 129, 0.826);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
   }
   
   .full-recipe-image img {
