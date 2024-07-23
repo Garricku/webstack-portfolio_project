@@ -30,7 +30,7 @@ const FullRecipeCard = ({ recipe }: Props) => {
           ))}
         </ul>
         <h4>Method:</h4>
-        <p>{recipe.instructions}</p>
+        <p dangerouslySetInnerHTML={{ __html: recipe.instructions }}></p>
       </div>
     </div>
   );
