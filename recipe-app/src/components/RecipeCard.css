@@ -18,6 +18,14 @@
     max-width: 100%;
 }
 
+.recipe-button {
+    border-color: rgba(20, 1, 81, 0.635);
+    background-color: rgb(193, 184, 7);;
+    margin: 4px;
+    padding: 6px;
+    border-radius: 40px;
+}
+
 .recipe-title {
     padding: 10px;
     grid-column: 2;

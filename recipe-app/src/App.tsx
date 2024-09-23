@@ -4,7 +4,7 @@ import * as api from "./api";
 import { Recipe } from "./types";
 import RecipeCard from "./components/RecipeCard";
 import FullRecipeCard from "./components/FullRecipeCard";
-import foodie from "./assets/fooooodie.png";
+import foodie from "./assets/foodie_we_love_food.png";
 import searchglass from "./assets/search.svg";
 
 function App() {
@@ -48,23 +48,25 @@ function App() {
   return (
     <div>
       <div className="body">
-        <div className="header-image">
-          <img src={foodie} alt="Foodie" />
-        </div>
-        <div className="navbar">
-          <div>
-            <h4 className="nav-item" onClick={() => { setSearchTerm(''); setSelectedRecipe(null); }}>New Search</h4>
+        <div className="header">
+          <div className="header-image">
+            <img src={foodie} alt="Foodie" />
           </div>
-          <form onSubmit={(event) => handleSearchSubmit(event)}>
-            <input
-              type="text"
-              required
-              placeholder="Search for food e.g. Pizza"
-              value={searchTerm}
-              onChange={(event) => setSearchTerm(event.target.value)}
-            />
-            <button className="search" type="submit"><img src={searchglass} alt="Search" /></button>
-          </form>
+          <div className="navbar">
+            <div>
+              <h4 className="nav-item" onClick={() => { setSearchTerm(''); setSelectedRecipe(null); }}>New Search</h4>
+            </div>
+            <form onSubmit={(event) => handleSearchSubmit(event)}>
+              <input
+                type="text"
+                required
+                placeholder="Search for food e.g. Pizza"
+                value={searchTerm}
+                onChange={(event) => setSearchTerm(event.target.value)}
+              />
+              <button className="search" type="submit"><img src={searchglass} alt="Search" /></button>
+            </form>
+          </div>
         </div>
       </div>
       <div className="sub-heading">
